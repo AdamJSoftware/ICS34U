@@ -1,14 +1,13 @@
 public class Table {
-    public double i;
-    public double i2;
-    public double i3;
-    public void main(String[] args){
-        i = 0;
+    public static void main(String[] args){
+        int i = 0;
         System.out.println("a\ta^2\ta^3");
         while(i != 4){
-            i ++;
-            i2 = Math.pow(i,2);
-            i3 = Math.pow(i, 3);
+            i++;
+            double d2 = Math.pow(i,2);
+            double d3 = Math.pow(i,3);
+            int i2 = (int) Math.round(d2);
+            int i3 = (int) Math.round(d3);
             System.out.println(i + "\t" + i2 + "\t" + i3);
         }
 
