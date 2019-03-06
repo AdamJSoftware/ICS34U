@@ -1,3 +1,5 @@
+package Tache1;
+
 import java.text.DecimalFormat;
 public class Rectangle {
     public static void main(String[] args){

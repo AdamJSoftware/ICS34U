@@ -1,3 +1,5 @@
+package Tache1;
+
 public class Series {
     public static void main(String[] args){
         int i = 1;

@@ -1,3 +1,5 @@
+package Tache1;
+
 public class Table {
     public static void main(String[] args){
         int i = 0;

@@ -1,3 +1,5 @@
+package Tache1;
+
 public class CinqLignes {
     public static void main(String[] args){
         System.out.println("Bienvenue a la programmation Java.");
