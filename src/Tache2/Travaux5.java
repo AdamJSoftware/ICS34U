@@ -18,7 +18,8 @@ public class Travaux5 {
             if (input.hasNextDouble()){
                 if (!f){
                     rayon = input.nextDouble();
-                    aire = Math.pow(rayon, PI);
+                    aire = Math.pow(rayon, 2);
+                    aire = aire * PI;
                     System.out.println("Entre la longueur du cyclindre: ");
                     f = true;
                 }
