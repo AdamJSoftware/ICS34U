@@ -1,18 +1,16 @@
 package Tache2;
 import java.util.Scanner;
 
-
-public class inputcercle {
-    public static void main(String[]args){
-        final double pi = 3.14159;
+public class TaxesDeVentes {
+    public static void main(String[] args){
         boolean j = false;
         Scanner input = new Scanner(System.in);
-        System.out.println("Mesure du rayon: ");
+        System.out.println("Entre le montant de l'achat");
         while (!j){
             if (input.hasNextDouble()){
-                double rayon = input.nextDouble();
-                double aire = Math.pow(rayon,2) * pi;
-                System.out.println("L'aire du cecrcle avec le rayon de " + rayon + " est " + aire);
+                double montantAchat = input.nextDouble();
+                double taxes = montantAchat * 0.13;
+                System.out.println("Les taxes de ventes est " + (int) (taxes*100)/100);
                 j = true;
             }
             else{
@@ -20,5 +18,7 @@ public class inputcercle {
                 input.next();
             }
         }
+
+
     }
 }
