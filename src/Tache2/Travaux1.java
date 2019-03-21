@@ -4,36 +4,36 @@ import java.util.Scanner;
 public class Travaux1 {
     public static void main (String[] args){
         final double PI = 3.14159265359;
-        boolean j = false;
-        boolean f = false;
-        double rayon;
-        double aire = 0.0;
-        double longueur;
-        double volume = 0.0;
+        double rayon = get_func("r");
+        double longueur = get_func("l");
 
+        double aire = Math.pow(rayon, 2) * PI;
+        double volume = longueur * aire;
+
+        System.out.println("L'aire est " + aire + " et le volume est " + volume);
+    }
+
+    private static double get_func(String value){
         Scanner input = new Scanner(System.in);
-        System.out.println("Entre le rayon du cyclindre: ");
-
-        while (!j){
-            if (input.hasNextDouble()){
-                if (!f){
-                    rayon = input.nextDouble();
-                      aire = Math.pow(rayon, 2);
-                    aire = aire * PI;
-                    System.out.println("Entre la longueur du cyclindre: ");
-                    f = true;
-                }
-                else{
-                    longueur = input.nextDouble();
-                    volume = longueur * aire;
-                    j = true;
-                }
+        print_func(value);
+        while (true){
+            if(input.hasNextDouble()){
+                return input.nextDouble();
             }
             else{
                 System.out.println("Insérer un nombre valide... ");
                 input.next();
             }
         }
-        System.out.println("L'aire est " + aire + " et le volume est " + volume);
+
+    }
+
+    private static void print_func(String value){
+        switch (value){
+            case "l":
+                System.out.print("Entre la longueur du cylindre");
+            case "r":
+                System.out.print("Entre le rayon du cylindre: ");
+        }
     }
 }

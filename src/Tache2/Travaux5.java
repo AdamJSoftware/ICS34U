@@ -13,9 +13,9 @@ public class Travaux5 {
 
     }
 
-    private static double get_func(String VALUE){
+    private static double get_func(String value){
         Scanner input = new Scanner(System.in);
-        print_func(VALUE);
+        print_func(value);
         while (true){
             if (input.hasNextDouble()){
                 return input.nextDouble();
@@ -27,8 +27,8 @@ public class Travaux5 {
         }
     }
 
-    private static void print_func(String VALUE){
-        switch (VALUE){
+    private static void print_func(String value){
+        switch (value){
             case "i":
                 System.out.print("Entre la vitesse initial: ");
                 break;

@@ -68,9 +68,9 @@ public class Travaux3 {
         System.out.println("La température initial est: " + ti + " celsius");
     }
 
-    private static double print_func(String Value){
+    private static double print_func(String value){
         Scanner input = new Scanner(System.in);
-        print_get(Value);
+        print_get(value);
         while(true){
             if (input.hasNextDouble()){
                 return input.nextDouble();

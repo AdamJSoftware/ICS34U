@@ -2,6 +2,7 @@ package Tache2;
 import java.util.Scanner;
 
 public class Travaux2 {
+    final static double VALEUR = 2.205;
     public static void main (String[] args){
         boolean j = false;
 
@@ -26,9 +27,6 @@ public class Travaux2 {
     }
 
     private static void livres_func (){
-        final double VALEUR = 2.205;
-        double livres;
-        double kg;
         boolean j = false;
 
         Scanner input = new Scanner(System.in);
@@ -36,8 +34,8 @@ public class Travaux2 {
 
         while (!j){
             if (input.hasNextDouble()){
-                livres = input.nextDouble();
-                kg = livres / VALEUR;
+                double livres = input.nextDouble();
+                double kg = livres / VALEUR;
                 System.out.println(livres + " livres équivant à " + kg + " kilogrammes");
                 j = true;
 
@@ -50,10 +48,6 @@ public class Travaux2 {
     }
 
     private static void kilogrammes_func (){
-
-        final double VALEUR = 2.205;
-        double livres;
-        double kg;
         boolean j = false;
 
         Scanner input = new Scanner(System.in);
@@ -61,8 +55,8 @@ public class Travaux2 {
 
         while (!j){
             if (input.hasNextDouble()){
-                kg = input.nextDouble();
-                livres = kg * VALEUR;
+                double kg = input.nextDouble();
+                double livres = kg * VALEUR;
                 System.out.println(kg + " kilogrammes équivant à " + livres + " livres");
                 j = true;
 
