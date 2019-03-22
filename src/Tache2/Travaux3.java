@@ -67,7 +67,6 @@ public class Travaux3 {
         double ti = -Q/(m*VALEUR) + tf;
         System.out.println("La température initial est: " + ti + " celsius");
     }
-
     private static double print_func(String value){
         Scanner input = new Scanner(System.in);
         print_get(value);

@@ -32,8 +32,10 @@ public class Travaux1 {
         switch (value){
             case "l":
                 System.out.print("Entre la longueur du cylindre");
+                break;
             case "r":
                 System.out.print("Entre le rayon du cylindre: ");
+                break;
         }
     }
 }

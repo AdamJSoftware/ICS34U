@@ -2,7 +2,7 @@ package Tache2;
 import java.util.Scanner;
 
 public class Travaux2 {
-    final static double VALEUR = 2.205;
+    final private static double VALEUR = 2.205;
     public static void main (String[] args){
         boolean j = false;
 
