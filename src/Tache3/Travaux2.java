@@ -5,7 +5,6 @@ import java.text.DecimalFormat;
 
 public class Travaux2 {
     public static void main(String[] args) {
-        boolean i = false;
         DecimalFormat df = new DecimalFormat(".##");
 
         double sousTotal = get("s");
