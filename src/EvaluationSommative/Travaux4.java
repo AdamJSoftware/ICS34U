@@ -25,10 +25,10 @@ public class Travaux4 {
             // Création d'une objet double appelé pouces qui est égal au résultat de la fonction prends. Nous passons "p" pour lui faire savoir que nous recherchons le montant de pouces
         double metre = pouces * CONVERSION_METRE;
             // Création d'une objet double appelé metre qui est égal à pouces * CONVERSION_METRE (conversion de pouces en metres)
-        double IMC = kilo / Math.pow(metre, 2);
+        double imc = kilo / Math.pow(metre, 2);
             // Création d'une objet double appelé metre qui est égal à kilo / metre^2 (calcule de l'IMC)
 
-        System.out.println("L'IMC est " + IMC);
+        System.out.println("L'IMC est " + imc);
             // Imprime une déclaration qui présente l'IMC à l'utilisateur
     }
 
