@@ -38,7 +38,8 @@ public class Travaux4 {
         while (true) {
             if (input.hasNextInt()) {
                 return input.nextInt();
-            } else {
+            }
+            else {
                 System.out.print("Insérer un nombre valide: ");
                 input.next();
             }
