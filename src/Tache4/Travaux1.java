@@ -38,7 +38,7 @@ public class Travaux1 {
                 return input.nextDouble();
             }
             else{
-                System.out.println("Insérer un nombre valide... ");
+                System.out.print("Insérer un nombre valide: ");
                 input.next();
             }
         }
