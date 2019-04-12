@@ -1,11 +1,9 @@
 package Tache5;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Travaux3 {
     public static void main(String[] args){
-        String month;
         int num_month = (int) (1 + Math.random()*13);
 
         var month_list = List.of("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
