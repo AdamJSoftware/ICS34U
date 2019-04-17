@@ -35,13 +35,23 @@ public class Travaux2 {
     private static double get() {
         Scanner input = new Scanner(System.in);
         System.out.print("Entrez le nombre de ventes: ");
+        String in = input.next();
 
         while (true) {
-            if (input.hasNextDouble()) {
-                return input.nextDouble();
-            } else {
+            try{
+                double newIn = Double.parseDouble(in);
+
+                if (newIn >= 100){
+                    return newIn;
+                }
+                else{
+                    System.out.print("Insérer un nombre plus grand que 100: ");
+                    in = input.next();
+                }
+            }
+            catch(NumberFormatException | NullPointerException nfe){
                 System.out.print("Insérer un nombre valide: ");
-                input.next();
+                in = input.next();
             }
         }
     }

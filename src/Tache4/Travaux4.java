@@ -34,14 +34,22 @@ public class Travaux4 {
     private static int get() {
         Scanner input = new Scanner(System.in);
         System.out.print("Entrez le nombre d'unités achetés: ");
-
+        String in = input.next();
         while (true) {
-            if (input.hasNextInt()) {
-                return input.nextInt();
+            try{
+                int newIn = Integer.parseInt(in);
+
+                if (newIn > 0){
+                    return newIn;
+                }
+                else{
+                    System.out.print("Insérer un nombre plus grand que 0: ");
+                    in = input.next();
+                }
             }
-            else {
-                System.out.print("Insérer un nombre valide: ");
-                input.next();
+            catch(NumberFormatException | NullPointerException nfe){
+                System.out.print("Insérer un nombre: ");
+                in = input.next();
             }
         }
     }

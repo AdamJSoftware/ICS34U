@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Travaux2 {
     public static void main(String[] args){
-
         int nb1 = (int) (Math.random()*10);
         int nb2 = (int) (Math.random()*10);
 
