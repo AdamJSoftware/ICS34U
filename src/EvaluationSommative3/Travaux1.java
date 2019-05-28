@@ -1,3 +1,11 @@
+/*
+Adam Jasniewicz                                                                                         le 22 mai 2019
+
+                                Évaluation sommative - Techniques de programmation 1
+                                  But: demander à l'utilisateur d'entrer le nombre de
+                                  côtés dans un pôlygones et la longeur de ces côtés
+                                  afin d'afficher son aire.
+ */
 package EvaluationSommative3;
 
 import java.util.Scanner;

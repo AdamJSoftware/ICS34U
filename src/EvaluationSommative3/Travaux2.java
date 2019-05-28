@@ -1,3 +1,12 @@
+/*
+Adam Jasniewicz                                                                                         le 22 mai 2019
+
+                                  Évaluation sommative - Techniques de programmation 2
+                                  But: Demander à l'utilisateur d'entrer deux charactères
+                                  qui représente le programme suivi à l'université
+                                  et l'année d'étude. Le programme imprime ensuite le
+                                  titre du programme et l'année d'étude correspondante
+ */
 package EvaluationSommative3;
 
 import java.util.Scanner;
