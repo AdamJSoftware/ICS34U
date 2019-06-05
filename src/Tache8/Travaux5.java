@@ -12,7 +12,6 @@ public class Travaux5 {
         double interet_annuel = get();
         System.out.print("Entre la périoide d'échéance: ");
         double period = get();
-
         System.out.println("Mois\t\tValeur du CPG");
         for(int mois = 1; mois<=period; mois++){
             double interet_mensuel = (interet_annuel/1200)*montant_initial;
@@ -23,7 +22,6 @@ public class Travaux5 {
     }
     private static double get() {
         Scanner input = new Scanner(System.in);
-
         while (true) {
             if (input.hasNextDouble()) {
                 return input.nextDouble();
