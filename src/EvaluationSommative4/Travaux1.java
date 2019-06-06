@@ -15,12 +15,19 @@ import java.util.Scanner;
 public class Travaux1 {
     public static void main(String[] args){
         System.out.print("Entrez le nombre minimale: ");
+        // Imprime une déclaration qui dit à l'utilisateur quoi d'entrer
         double min = get();
+        // Création d'une variable double appelé cotes qui est égal à le résultat de get
         System.out.print("Entrez le nombre maximale: ");
+        // Imprime une déclaration qui dit à l'utilisateur quoi d'entrer
         double max = get();
+        // Création d'une variable double appelé cotes qui est égal à le résultat de get
         System.out.println("Nombre\t\t\t\tCarrée");
+        // Imprime les noms des colonnes
         for (double i = min; i <=max;i++){
+            // Création d'un loupe for qui imprime des données jusqu'à i (incrément de 1) est égale a max
             System.out.printf("%s\t\t\t\t\t%s\n",i,Math.pow(i,2));
+            // Imprimé le nombre i ainsi que son carrée à l'aide de Math.pow
         }
 
 

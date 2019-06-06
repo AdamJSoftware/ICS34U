@@ -17,6 +17,7 @@ import java.text.DecimalFormat;
 public class Travaux3 {
     public static void main(String[] args){
         DecimalFormat df = new DecimalFormat("#0.00");
+        // Création d'un object Decimal Format appelé df. Ceci aide pour arrondir le montant décimal
         System.out.print("Montant du prêt: ");
         // Imprime une déclaration qui dit à l'utilisateur quoi d'entrer
         double montant_initial = get();
@@ -39,13 +40,21 @@ public class Travaux3 {
         // Imprime le paiement total (pM*12) pour l'utilisateur
         double balance = montant_initial;
         System.out.println("Paiement#\t\t\tIntérêt\t\t\t\tPrincipal\t\t\tBalance");
+        // Imprime les noms des colonnes
         for(double i = 1; i <= annee*12; i++){
+            // Création d'un loupe for qui imprime des données jusqu'à i (incrément de 1) est égale a année * 12
             TIM = interetAnnuel/1200;
+            // Calculer le taux d'intérêt de mensuel (double)
             pM = (montant_initial*TIM)/(1-Math.pow((1+TIM),(-annee*12)));
+            // Calculer le payment mensuel (double)
             double interet = TIM*balance;
+            // Calculer l'intéret (double)
             double montantPrincipal = pM - interet;
+            // Calculer le montant principal
             balance = balance - montantPrincipal;
+            // Calculer la nouvelle balance
             System.out.printf("%s\t\t\t\t\t%s\t\t\t\t%s\t\t\t\t%s\n",(int)i,df.format(interet),df.format(montantPrincipal), df.format(balance));
+            // Imprimer tous les valeurs nécessaire pour l'utilisateur dans des colonnes correspondants aux noms.
         }
 
     }
