@@ -12,7 +12,8 @@ public class Travaux8 {
         double tax = get(true);
         System.out.println("Rabais\t\t\tPrix");
         for (double i =20; i <=80; i+=20){
-            System.out.printf("%s\t\t\t%s\n",i+"%",df.format(prix*(tax/100+1)*(i/100)));
+            double newPrix = prix*(tax/100+1);
+            System.out.printf("%s\t\t\t%s\n",i+"%",df.format(newPrix-(newPrix*(i/100))));
         }
 
 
@@ -37,7 +38,6 @@ public class Travaux8 {
                 }
             }
         }
-
         else{
             Scanner input = new Scanner(System.in);
             while (true) {
