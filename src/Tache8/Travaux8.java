@@ -15,9 +15,6 @@ public class Travaux8 {
             double newPrix = prix*(tax/100+1);
             System.out.printf("%s\t\t\t%s\n",i+"%",df.format(newPrix-(newPrix*(i/100))));
         }
-
-
-
     }
     private static double get(boolean tax) {
         if (tax){
