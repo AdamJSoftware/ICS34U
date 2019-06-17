@@ -1,3 +1,19 @@
+/*
+Adam Jasniewicz                                                                                         le 17 juin 2019
+
+                                               Tâche Sommative Final - 2
+                                  But: Ce programme affiche un menu sur l'écran.
+                                  Si l'utilisateur entre 1, le programme demande
+                                  le rayon d'un cercle et affiche le résultat
+                                  Si l'utilisateur entre 2, le programme demande
+                                  pour la longeur et largeur d'un rectangle
+                                  et affiche le résultat
+                                  Si l'utilisateur entre 3, le programme demande
+                                  pour la base et hateur d'un triangle
+                                  et affiche le résultat
+                                  Si l'utilistaur entre 4, le programme quitte.
+
+ */
 package Exam;
 
 import java.util.Scanner;

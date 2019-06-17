@@ -1,9 +1,11 @@
 /*
-Adam Jasniewicz                                                                                         le 3 juin 2019
+Adam Jasniewicz                                                                                         le 17 juin 2019
 
-                                                Tâche Sommative Final
+                                               Tâche Sommative Final - 1
                                   But: Ce programme lit les information d'un employé
-                                  (nom, nombres d'heures salaires,
+                                  (nom, nombres d'heures, salaire par heur, taxes fédérales
+                                  taxes provinciales, retenues sur le salaire) et affiche
+                                  les données de la paye.
 
  */
 package Exam;
