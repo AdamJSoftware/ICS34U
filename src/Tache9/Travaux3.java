@@ -13,13 +13,13 @@ public class Travaux3 {
     }
     private static String get() {
         Scanner input = new Scanner(System.in);
-        String in = input.next();
+        String in = input.nextLine();
         while (true) {
             if (Pattern.matches("[a-zA-Z]+",in)){
                 return in;
             } else {
                 System.out.print("Insérer seulement des lettres: ");
-                in = input.next();
+                in = input.nextLine();
             }
         }
     }
