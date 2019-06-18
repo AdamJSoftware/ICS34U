@@ -86,11 +86,8 @@ public class Travaux2 {
                     // Retourner la valeur integer newIn
 
                 }
-                else if (newIn == 5){
-                    // Ce instruction if va fair le suivant si le discriminant est supérieur a 5
-                    System.exit(0);
-                    // Le programme quitte
-                }else {
+
+                else {
                     // Ce instruction if va fair le suivant si le discriminant est supérieur a 4
                     System.out.print("Insérer un nombre entre 1 et 5: ");
                     // Imprime une déclaration qui dit à l'utilisateur quoi d'entrer

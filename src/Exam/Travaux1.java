@@ -43,6 +43,7 @@ public class Travaux1 {
         System.out.printf("Taxes fédérales (%s%%): %s\n", taxeF, df.format(salaireBrut*taxeF));
         System.out.printf("Taxes provinciales (%s%%): %s\n", taxeP, df.format(salaireBrut*taxeP));
         System.out.printf("Retenues (%s%%): %s\n", retenues, df.format(salaireBrut*retenues));
+        System.out.printf("Déductions totales: %s", df.format(deduction(salaireBrut, taxeF, taxeP, retenues)));
         System.out.printf("Salaire net: %s\n", df.format(total(salaireBrut, taxeF, taxeP, retenues)));
 
     }
@@ -86,5 +87,16 @@ public class Travaux1 {
         // Calculez les retenues imposer
         return salaireBrut-taxeF-taxeP-retenues;
         // Soustraire tout du salaire brut et retournez la réponse
+    }
+    private static double deduction(double salaireBrut, double taxeF, double taxeP, double retenues){
+        // Calculation du déduction total
+        taxeF = salaireBrut*taxeF;
+        // Calculez le taxe fédéral imposer
+        taxeP = salaireBrut*taxeP;
+        // Calculez le taxe provincial imposer
+        retenues = salaireBrut*retenues;
+        // Calculez les retenues imposer
+        return taxeF+taxeP+retenues;
+        // Retournez la déduction
     }
 }
