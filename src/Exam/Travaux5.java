@@ -6,27 +6,31 @@ public class Travaux5 {
     public static void main(String[] args){
         while (true) {
             System.out.print("Entre une lettre: ");
-            System.out.printf("Le chiffre correspondant est: %s\n", convert(get()));
+            String lettre = get();
+            if (lettre == null){
+                System.out.println("Entrée invalide. Arrêt du programme");
+                System.exit(0);
+            }
+            else {
+                System.out.printf("Le chiffre correspondant est: %s\n", convert(lettre));
+            }
         }
     }
     private static String get() {
         Scanner input = new Scanner(System.in);
         String in = input.next();
-        while (true) {
-            char c = in.charAt(0);
-            String newC = Character.toString(c);
-            if(Character.isLetter(c)){
-                return newC.toUpperCase();
-            }
-            else{
-                System.out.print("Insérer un charactère valide: ");
-                in = input.next();
-            }
+        char c = in.charAt(0);
+        String newC = Character.toString(c);
+        if(Character.isLetter(c)){
+            return newC.toUpperCase();
         }
+        else{
+            return null;
+        }
+
     }
     private static int convert(String lettre){
         switch (lettre){
-
             case "W" :
                 case "X" :
                     case "Y":
@@ -64,6 +68,5 @@ public class Travaux5 {
             default:
                 return 1;
         }
-
     }
 }
